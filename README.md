@@ -7,3 +7,8 @@ A .NET Core GraphQL boilerplate with a Mafia theme.
   /ui/playground
 # Schema Link
   /graphql
+# Example Queries
+{
+  capo(id:"3"){id, name}
+}
+ 
