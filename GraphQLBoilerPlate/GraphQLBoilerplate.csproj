@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk;Microsoft.NET.Sdk.Publish">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>GraphQLBoilerplate</AssemblyName>
+    <RootNamespace>GraphQLBoilerplate</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="GraphiQL" Version="1.2.0" />
+    <PackageReference Include="GraphQL" Version="2.4.0" />
+    <PackageReference Include="GraphQL.Authorization" Version="2.0.27" />
+    <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="3.3.0" />
+    <PackageReference Include="GraphQL.Server.Ui.Playground" Version="3.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GraphQLBoilerplate.Models.Mafia\GraphQLBoilerplate.Models.Mafia.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Settings.job">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
